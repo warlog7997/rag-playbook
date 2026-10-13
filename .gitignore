@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+data/chromadb/
+data/*.pkl
+data/eval_dataset.json
+*.db
+.DS_Store
+venv/
+.venv/
+node_modules/
+*.egg-info/
+dist/
+build/
+.idea/
+.vscode/
