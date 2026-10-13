@@ -94,7 +94,7 @@ def run_react_agent(question: str, max_iterations: int = 5) -> dict:
       - iterations: list of {thought, search_query, results_preview}
       - total_searches: int
     """
-    api_key = keyring.get_password("Anthorpic", "API_KEY")
+    api_key = keyring.get_password("Anthropic", "API_KEY")
     client = anthropic.Anthropic(api_key=api_key.strip())
 
     messages = [{"role": "user", "content": question}]

@@ -61,16 +61,16 @@ Run this once:
 
 ```python
 import keyring
-keyring.set_password("Anthorpic", "API_KEY", "your-key-here")
+keyring.set_password("Anthropic", "API_KEY", "your-key-here")
 ```
 
-Note the intentional spelling "Anthorpic" (not "Anthropic") — this is how the
+Note the intentional spelling "Anthropic" (not "Anthropic") — this is how the
 key is stored across all scripts in this repo. Copy the spelling exactly.
 
 To verify it's set:
 ```python
 import keyring
-print(keyring.get_password("Anthorpic", "API_KEY"))
+print(keyring.get_password("Anthropic", "API_KEY"))
 ```
 
 ---
@@ -180,8 +180,8 @@ python demo.py
 Run `python learn/ingest.py` first. The index files are created in `data/`.
 
 **"Anthropic API key not found"**
-Run `keyring.set_password("Anthorpic", "API_KEY", "your-key")` again.
-Note: it's "Anthorpic" not "Anthropic".
+Run `keyring.set_password("Anthropic", "API_KEY", "your-key")` again.
+Note: it's "Anthropic" not "Anthropic".
 
 **Slow embedding on first run**
 The `all-MiniLM-L6-v2` model is ~90 MB and is downloaded once from HuggingFace.

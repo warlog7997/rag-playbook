@@ -107,7 +107,7 @@ Answer the question using ONLY the documentation provided. Be specific and direc
 def run_ragas_evaluation(ragas_rows: list[dict]) -> dict:
     """Run RAGAS metrics on the dataset."""
     import keyring
-    api_key = keyring.get_password("Anthorpic", "API_KEY")
+    api_key = keyring.get_password("Anthropic", "API_KEY")
 
     # Configure RAGAS to use Claude
     llm = ChatAnthropic(

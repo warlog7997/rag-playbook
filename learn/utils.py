@@ -137,16 +137,28 @@ def ask_claude(system: str, user: str, model: str = "claude-haiku-4-5-20251001")
     """
     Call Claude with a system + user prompt. Returns response text.
 
-    Uses keyring to retrieve the API key — set it once with:
+    API key is loaded from (in order):
+      1. ANTHROPIC_API_KEY environment variable
+      2. keyring service "Anthropic", key "API_KEY"
+
+    Set it once with:
         import keyring
-        keyring.set_password("Anthorpic", "API_KEY", "your-key-here")
+        keyring.set_password("Anthropic", "API_KEY", "your-key-here")
+
+    Or set the environment variable:
+        export ANTHROPIC_API_KEY=your-key-here
     """
-    api_key = keyring.get_password("Anthorpic", "API_KEY")
+    import os
+    api_key = (
+        os.environ.get("ANTHROPIC_API_KEY")
+        or keyring.get_password("Anthropic", "API_KEY")
+        or keyring.get_password("Anthorpic", "API_KEY")  # legacy fallback
+    )
     if not api_key:
         raise ValueError(
-            "Anthropic API key not found. Set it with:\n"
-            "  import keyring\n"
-            "  keyring.set_password('Anthorpic', 'API_KEY', 'your-key-here')"
+            "Anthropic API key not found. Set it with one of:\n"
+            "  export ANTHROPIC_API_KEY=your-key-here\n"
+            "  OR: keyring.set_password('Anthropic', 'API_KEY', 'your-key-here')"
         )
     client = anthropic.Anthropic(api_key=api_key.strip())
     for attempt in range(3):
