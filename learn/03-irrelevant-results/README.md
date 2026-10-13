@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/03-irrelevant-results/notebook.ipynb)
+
 # Chapter 3 — Irrelevant Results (Right File, Wrong Section)
 
 ## The Real Story

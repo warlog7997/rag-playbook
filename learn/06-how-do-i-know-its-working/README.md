@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/06-how-do-i-know-its-working/notebook.ipynb)
+
 # Chapter 6 — How Do I Know It's Working?
 
 ## The Real Story

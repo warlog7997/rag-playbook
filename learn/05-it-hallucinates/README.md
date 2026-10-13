@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/05-it-hallucinates/notebook.ipynb)
+
 # Chapter 5 — It Hallucinates
 
 ## The Real Story

@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/02-wrong-answers/notebook.ipynb)
+
 # Chapter 2 — When RAG Gets It Wrong
 
 ## The Real Story

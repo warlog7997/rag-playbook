@@ -10,23 +10,23 @@ Every technique here was battle-tested across real AI projects: a healthcare Jir
 
 ## Who is this for?
 
-| You are... | Start here |
-|---|---|
-| New to RAG, want to understand the basics | [learn/01-what-is-rag](./learn/01-what-is-rag/) |
-| Built a RAG bot but it returns wrong answers | [learn/02-wrong-answers](./learn/02-wrong-answers/) |
-| Results are retrieved but feel irrelevant | [learn/03-irrelevant-results](./learn/03-irrelevant-results/) |
-| Bot fails on complex, multi-part questions | [learn/04-complex-questions](./learn/04-complex-questions/) |
-| Bot makes up facts / hallucinates | [learn/05-it-hallucinates](./learn/05-it-hallucinates/) |
-| Can't tell if your RAG is actually working | [learn/06-how-do-i-know-its-working](./learn/06-how-do-i-know-its-working/) |
-| Building production systems (LangGraph, MCP, etc.) | [production/](./production/) |
+| You are... | Start here | Run in Colab |
+|---|---|---|
+| New to RAG, want to understand the basics | [learn/01-what-is-rag](./learn/01-what-is-rag/) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/01-what-is-rag/notebook.ipynb) |
+| Built a RAG bot but it returns wrong answers | [learn/02-wrong-answers](./learn/02-wrong-answers/) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/02-wrong-answers/notebook.ipynb) |
+| Results are retrieved but feel irrelevant | [learn/03-irrelevant-results](./learn/03-irrelevant-results/) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/03-irrelevant-results/notebook.ipynb) |
+| Bot fails on complex, multi-part questions | [learn/04-complex-questions](./learn/04-complex-questions/) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/04-complex-questions/notebook.ipynb) |
+| Bot makes up facts / hallucinates | [learn/05-it-hallucinates](./learn/05-it-hallucinates/) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/05-it-hallucinates/notebook.ipynb) |
+| Can't tell if your RAG is actually working | [learn/06-how-do-i-know-its-working](./learn/06-how-do-i-know-its-working/) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/06-how-do-i-know-its-working/notebook.ipynb) |
+| Building production systems (LangGraph, MCP, etc.) | [production/](./production/) | — |
 
 ---
 
 ## The Knowledge Base
 
-All examples in this repo use the same **simple PHP blog app** as the codebase being searched. It has ~10 files covering posts, users, comments, and auth — simple enough to understand in 5 minutes, real enough to make RAG interesting.
+All examples in this repo use the same **NovaDash SaaS product docs** as the knowledge base — 10 markdown files covering authentication, billing, user management, integrations, and more. Simple enough to understand in 5 minutes, rich enough to trigger real RAG failure modes.
 
-See [blog-app/](./blog-app/) for the full source.
+See [knowledge-base/](./knowledge-base/) for the full source.
 
 ---
 
@@ -45,7 +45,7 @@ Here's every problem we hit — and how we fixed it.
 ---
 
 ### Chapter 1 — What is RAG?
-**[learn/01-what-is-rag/](./learn/01-what-is-rag/)**
+**[learn/01-what-is-rag/](./learn/01-what-is-rag/)** &nbsp; [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/01-what-is-rag/notebook.ipynb)
 
 The simplest possible RAG system. Embed documents, store in a vector DB, retrieve, generate. Understand the 3-step pipeline before anything else.
 

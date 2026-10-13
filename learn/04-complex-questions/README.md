@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/04-complex-questions/notebook.ipynb)
+
 # Chapter 4 — Complex Questions
 
 ## The Real Story

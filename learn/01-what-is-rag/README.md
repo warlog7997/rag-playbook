@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/warlog7997/rag-playbook/blob/master/learn/01-what-is-rag/notebook.ipynb)
+
 # Chapter 1 — What is RAG?
 
 ## The Problem RAG Solves
